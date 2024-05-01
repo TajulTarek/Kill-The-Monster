@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.laserrulesController">
+   <center>
+      <AnchorPane prefHeight="780.0" prefWidth="1540.0" styleClass="root" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="exitbutton" layoutX="1354.0" layoutY="700.0" mnemonicParsing="false" onAction="#logout" styleClass="exitbutton" stylesheets="@application.css" text="EXIT" />
+            <Button fx:id="playbutton" layoutX="42.0" layoutY="700.0" mnemonicParsing="false" onAction="#switchTopunch" styleClass="exitbutton" stylesheets="@application.css" text="Back" />
+            <Label layoutX="34.0" layoutY="45.0" prefHeight="42.0" prefWidth="1499.0" styleClass="rules" text="Rules">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Label layoutX="34.0" layoutY="390.0" prefHeight="60.0" prefWidth="1499.0" styleClass="rules" stylesheets="@application.css" text="⚫ The objective of the game is to kill as many monsters as possible.">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="330.0" prefHeight="60.0" prefWidth="1499.0" styleClass="rules" stylesheets="@application.css" text="⚫ Each monster has a health value that represents their current level of vitality.">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="93.0" lineSpacing="10.0" prefHeight="240.0" prefWidth="1499.0" styleClass="rules" stylesheets="@application.css" text="⚫ Move the gun Left or Right to point a monster and reduce it's Health. If a monster manages to touch the ground before you eliminate it, Your Health will decrese by the percentage of the monster. If Your Health become zero , the game is over..In this game, you have a gun that you can move either to the left or to the right in order to target and weaken a monster. By successfully reducing the monster's health to zero, you eliminate it and earn points. However, if a monster reaches the ground before you can eliminate it, your health will decrease proportionally based on the monster's strength. If your health reaches zero, the game comes to an end." wrapText="true">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="448.0" prefHeight="60.0" prefWidth="1499.0" styleClass="rules" stylesheets="@application.css" text="⚫ Monsters will die when their health reaches zero.">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

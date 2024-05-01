@@ -1,0 +1,44 @@
+.root {
+    -fx-background-image: url('../pics/bg.jpg');
+    -fx-background-size: cover;
+}
+.exitbutton {
+    -fx-background-color: #FFFF00; 
+    -fx-text-fill: black; 
+    -fx-font-size: 20px; 
+    -fx-font-family: "Arial"; 
+    -fx-padding: 10px 20px; 
+    -fx-border-radius: 20px; 
+    -fx-pref-width: 300px;
+    -fx-pref-height: 50px;
+    -fx-background-radius:20px;
+    -fx-border-color:orange;
+}
+
+.exitbutton:pressed {
+    -fx-background-color: #5E5223; 
+}
+.exitbutton:hover {
+    -fx-background-color: white; 
+}
+.rules {
+    -fx-background-color: #AC9641;
+    -fx-text-fill: white; 
+    -fx-font-size: 24px;
+    -fx-font-family: "Arial"; 
+    -fx-padding: 10px 20px; 
+    -fx-border-radius: 20%; 
+}
+.bonduk{
+	-fx-background-color: rgba(0, 0, 0, 0); 
+	/*-fx-background-color: #FFFF00; */
+    -fx-background-image: url('../pics/bondikpic.png');
+    -fx-background-size: cover; 	
+}
+
+
+
+
+
+
+

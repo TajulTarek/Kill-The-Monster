@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <left>
+      <AnchorPane prefHeight="780.0" prefWidth="1540.0" styleClass="root" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="620.0" layoutY="50.0" opacity="0.72" prefHeight="350.0" prefWidth="300.0" style="-fx-background-color: gray;" />
+            <Button fx:id="playbutton" layoutX="695.0" layoutY="147.0" mnemonicParsing="false" onAction="#switchTolevels" styleClass="exitbutton" stylesheets="@application.css" text="Play" />
+            <Button fx:id="exitbutton" layoutX="695.0" layoutY="228.0" mnemonicParsing="false" onAction="#logout" styleClass="exitbutton" stylesheets="@application.css" text="EXIT" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

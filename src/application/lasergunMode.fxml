@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.lasergunModeController">
+   <center>
+      <AnchorPane fx:id="anchorpane" prefHeight="780.0" prefWidth="1540.0" styleClass="root" stylesheets="@level1.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="bonduk10" fitHeight="640.0" fitWidth="5.0" layoutX="767.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pics/bonduk10.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="exitbutton" layoutX="1354.0" layoutY="700.0" mnemonicParsing="false" onAction="#logout" styleClass="exitbutton" stylesheets="@level1.css" text="EXIT" />
+            <Button fx:id="backbutton" layoutX="42.0" layoutY="700.0" mnemonicParsing="false" onAction="#switchTochoosemode" styleClass="exitbutton" stylesheets="@level1.css" text="Back" />
+            <Button fx:id="startbutton" layoutX="670.0" layoutY="200.0" mnemonicParsing="false" onAction="#startGame" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: yellow; -fx-border-color: white;" styleClass="start" stylesheets="@level1.css" text="START GAME" textFill="#131313">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="ground" fitHeight="20.0" fitWidth="1540.0" layoutY="640.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pics/ground.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rightborder" fitHeight="780.0" fitWidth="20.0" layoutX="1535.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pics/sideborder.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="leftborder" fitHeight="780.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pics/sideborder.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="nayem" layoutX="1083.0" layoutY="-40.0" mnemonicParsing="false" onAction="#hitnayem" prefHeight="40.0" prefWidth="40.0" styleClass="obj4" stylesheets="@level1.css" />
+            <Button fx:id="unayes" layoutX="340.0" layoutY="-60.0" mnemonicParsing="false" onAction="#hitunayes" prefHeight="60.0" prefWidth="60.0" styleClass="obj5" />
+            <ProgressBar fx:id="nayemHealth" layoutX="1085.0" layoutY="-60.0" prefWidth="50.0" progress="1.0" />
+            <Button fx:id="restartbutton" layoutX="680.0" layoutY="706.0" mnemonicParsing="false" onAction="#restart" style="-fx-background-color: yellow; -fx-border-color: white;" styleClass="start" stylesheets="@level1.css" text="RESTART" />
+            <ProgressBar fx:id="unayesHealth" layoutX="340.0" layoutY="-80.0" prefWidth="60.0" progress="1.0" />
+            <Button fx:id="billah" layoutX="700.0" layoutY="-100.0" mnemonicParsing="false" onAction="#hitbillah" prefHeight="100.0" prefWidth="100.0" styleClass="obj6" stylesheets="@level1.css" />
+            <ProgressBar fx:id="billahHealth" layoutX="700.0" layoutY="-120.0" prefWidth="100.0" progress="1.0" />
+            <Label fx:id="killcounter" layoutX="78.0" layoutY="21.0" prefHeight="50.0" prefWidth="77.0" styleClass="killCount" stylesheets="@level1.css" text="0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="30.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" styleClass="killpng">
+               <image>
+                  <Image url="@../pics/mon.png" />
+               </image>
+            </ImageView>
+            
+            <Button fx:id="rulesbutton" layoutX="670.0" layoutY="282.0" mnemonicParsing="false" onAction="#showrules" prefHeight="60.0" prefWidth="141.0" style="-fx-background-color: yellow; -fx-border-color: white;" styleClass="start" stylesheets="@level1.css" text="RULES" textFill="#131313">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            
+            <AnchorPane fx:id="resultpane" layoutX="470.0" layoutY="180.0" opacity="0.8" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" visible="false">
+               <children>
+                  <Label fx:id="totalkill" layoutX="200.0" layoutY="120.0" prefHeight="42.0" prefWidth="201.0" text="Total Kill :    5" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" visible="false">
+                     <font>
+                        <Font name="Dubai Regular" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="scoreboard" layoutX="200.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: yellow; -fx-border-color: white;" styleClass="start" stylesheets="@level1.css" text="SCOREBOARD" underline="true" visible="false" />
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="bondukpic" fitHeight="90.0" fitWidth="80.0" layoutX="730.0" layoutY="582.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pics/bondikpic.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="ingameinstruction" layoutX="310.0" layoutY="350.0" prefHeight="118.0" prefWidth="955.0" text="To move the LaserGun left, press 'A'.                        To move the LaserGun right, press 'D'." textFill="#4c7b7b" wrapText="true">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="43.0" fitWidth="48.0" layoutX="1381.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@health.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="health" layoutX="1429.0" layoutY="17.0" text="100" textFill="#00ac03">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="parcen" layoutX="1471.0" layoutY="16.0" text="\%" textFill="#009e03">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+
+      </AnchorPane>
+   </center>
+</BorderPane>

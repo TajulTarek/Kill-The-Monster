@@ -1,0 +1,108 @@
+.roots {
+    -fx-background-image: url('../pics/bg11.jpg');
+    -fx-background-size: cover;
+}
+.root {
+    -fx-background-image: url('../pics/bg.jpg');
+    -fx-background-size: cover;
+}
+.exitbutton {
+    -fx-background-color: #FFFF00; 
+    -fx-text-fill: black;
+    -fx-font-size: 20px; 
+    -fx-font-family: "Arial"; 
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 20px; 
+    -fx-pref-width: 150px;
+    -fx-pref-height: 50px;
+    -fx-background-radius:20px;
+}
+
+.exitbutton:pressed {
+    -fx-background-color: #5E5223; 
+}
+.exitbutton:hover {
+    -fx-background-color: white; 
+}
+.base{
+    -fx-background-color: #FFFFF0;
+    -fx-background-size: cover;
+}
+.start{
+    -fx-background-color: #131313;
+    -fx-text-fill: black;
+    -fx-font-size: 24px; 
+    -fx-font-family: "Bold";
+    
+    -fx-border-radius: 20px;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 60px;
+
+    -fx-font-weight: 800;
+}
+.obj1{
+	-fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-image: url('../pics/img1.png');
+    -fx-background-size: cover; 
+    
+    }
+.obj2{
+	-fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-image: url('../pics/img2.png');
+    -fx-background-size: cover; 
+    
+    }
+.obj3{
+	-fx-background-color: rgba(0, 0, 0, 0); 
+    -fx-background-image: url('../pics/img3.png');
+    -fx-background-size: cover; 
+    
+    }
+.obj4{
+	-fx-background-color: rgba(0, 0, 0, 0); 
+    -fx-background-image: url('../pics/img4.png');
+    -fx-background-size: cover; 
+    
+    }
+.obj5{
+	-fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-image: url('../pics/img5.png');
+    -fx-background-size: cover; 
+    
+    }
+.obj6{
+	-fx-background-color: rgba(0, 0, 0, 0); 
+    -fx-background-image: url('../pics/img6.png');
+    -fx-background-size: cover; 
+    
+    }
+.obj7{
+	-fx-background-color: rgba(0, 0, 0, 0); 
+    -fx-background-image: url('../pics/img7.png');
+    -fx-background-size: cover; 
+    
+    }
+.obj8{
+	-fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-image: url('../pics/img8.png');
+    -fx-background-size: cover; 
+    
+    }
+.obj9{
+	-fx-background-color: rgba(0, 0, 0, 0); 
+    -fx-background-image: url('../pics/img9.png');
+    -fx-background-size: cover; 
+    
+    }
+.killCount{
+    -fx-font-size: 24px;
+    -fx-text-fill: red;
+    -fx-background-color: #800000; 
+    -fx-padding: 10px;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, red, 10, 0, 0, 0);
+}
+.killpng{
+	-fx-background-color: rgba(0, 0, 0, 0); 
+}
+
